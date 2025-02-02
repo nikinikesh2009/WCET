@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0c0c0c;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animated Overlay */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?galaxy,stars') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Glowing Title */
+.glow-text {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px cyan;
+}
+
+/* Subtext */
+.subtext {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    animation: fade-in 2s ease-in-out;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+/* Special Effects */
+.neon-name {
+    color: magenta;
+    text-shadow: 0 0 10px magenta, 0 0 20px magenta;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
