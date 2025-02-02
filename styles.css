@@ -18,29 +18,11 @@ body {
     z-index: -1;
 }
 
-/* Google Translate Widget */
-.translate-widget {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 100;
-}
-
 /* Glowing Title */
 .glow-text {
     font-size: 3rem;
     text-transform: uppercase;
     text-shadow: 0 0 15px cyan;
-    animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px cyan, 0 0 20px cyan;
-    }
-    to {
-        text-shadow: 0 0 20px cyan, 0 0 40px cyan, 0 0 60px cyan;
-    }
 }
 
 /* Subtext */
@@ -111,4 +93,5 @@ body {
 @keyframes fade-in {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
-  }
+}
+
