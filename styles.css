@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0c0c0c;
+    color: #fff;
+    text-align: center;
+}
+
+/* Animated Overlay */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?galaxy,stars') no-repeat center center/cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Google Translate Widget */
+.translate-widget {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+/* Glowing Title */
+.glow-text {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px cyan;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    }
+    to {
+        text-shadow: 0 0 20px cyan, 0 0 40px cyan, 0 0 60px cyan;
+    }
+}
+
+/* Subtext */
+.subtext {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Hero Section */
+.hero {
+    padding: 50px;
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    animation: fade-in 2s ease-in-out;
+}
+
+/* Scroll Section */
+.scroll-section {
+    padding: 40px;
+    margin: 20px;
+    font-size: 1.2rem;
+    background: rgba(255, 0, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Experiments Section */
+.experiment {
+    padding: 40px;
+    background: rgba(255, 255, 0, 0.1);
+    border-radius: 10px;
+}
+
+.experiment ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experiment li {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+/* Special Effects */
+.glitch {
+    text-shadow: 2px 2px 5px red, -2px -2px 5px blue;
+}
+
+.neon-title {
+    color: cyan;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+.neon-name {
+    color: magenta;
+    text-shadow: 0 0 10px magenta, 0 0 20px magenta;
+}
+
+/* Animations */
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
