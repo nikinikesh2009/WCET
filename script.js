@@ -123,3 +123,12 @@ function loadComments() {
         commentList.appendChild(commentDiv);
     });
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const zenodoCard = document.querySelector(".zenodo-card");
+    zenodoCard.addEventListener("click", () => {
+        zenodoCard.style.boxShadow = "0 0 30px rgba(0, 255, 255, 0.9), 0 0 50px rgba(255, 0, 255, 0.9)";
+        setTimeout(() => {
+            zenodoCard.style.boxShadow = "0 0 15px rgba(0, 255, 255, 0.3), 0 0 25px rgba(255, 0, 255, 0.3)";
+        }, 500);
+    });
+});
